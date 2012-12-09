@@ -25,7 +25,7 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
     @place.update_attributes(params[:place])
 
-    redirect_to place_path(@place)
+    redirect_to @place
   end
 
   def destroy
