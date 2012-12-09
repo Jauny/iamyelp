@@ -1,0 +1,9 @@
+<h1>All the places!</h1>
+
+<ul>
+  <% @places.each do |place| %>
+    <li><%= link_to place.name, place_path(place) %></li>
+  <% end %>
+</ul>
+
+<%= button_to "Create", new_place_path, :method => "get" %>

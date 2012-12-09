@@ -1,0 +1,8 @@
+<h1><%= @place.name %></h1>
+
+<ul>
+  <li><%= @place.description %></li>
+  <li><%= @place.address %></li>
+</ul>
+
+<%= button_to "Delete", place_path(@place), :method => "delete" %>
