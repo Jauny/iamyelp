@@ -5,4 +5,6 @@
   <li><%= @place.address %></li>
 </ul>
 
-<%= button_to "Delete", place_path(@place), :method => "delete" %>
+<% if @place.user_id == current_user.id %>
+  <%= button_to "Delete", place_path(@place), :method => "delete" %>
+<% end %>

@@ -1,4 +1,6 @@
 class PlacesController < ApplicationController
+  before_filter :require_login, :except => [:index, :show]
+
   def index
     @places = Place.all
   end
@@ -12,9 +14,14 @@ class PlacesController < ApplicationController
   end
 
   def create
-    @place = Place.create(params[:place])
+    @place = Place.new(params[:place])
+    @place.user_id = current_user.id
 
-    redirect_to places_path
+    if @place.save
+      redirect_to places_path
+    else
+      render 'new'  
+    end
   end
 
   def edit
@@ -33,4 +40,12 @@ class PlacesController < ApplicationController
 
     redirect_to root_path
   end
+
+  private
+    def require_login
+      unless signed_in?
+        flash[:error] = "You must be logged in to access this section"
+        redirect_to root_path
+      end
+    end
 end

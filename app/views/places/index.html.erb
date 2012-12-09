@@ -2,8 +2,12 @@
 
 <ul>
   <% @places.each do |place| %>
-    <li><%= link_to place.name, place %></li>
+    <li><h4><%= place.address %></h4></li>
+    <li><h2><%= link_to place.name, place %></h2></li>
+    <li><h3><%= place.description %></h3></li>
   <% end %>
 </ul>
 
-<%= button_to "Create", new_place_path, :method => "get" %>
+<% if signed_in? %>
+  <%= button_to "Create", new_place_path, :method => "get" %>
+<% end %>

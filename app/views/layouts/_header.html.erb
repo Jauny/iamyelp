@@ -1,0 +1,13 @@
+<nav>
+  <%= link_to "I am Yelp", root_path, :class => "title" %>
+  
+  <ul class="right">
+    <% if signed_in? %>
+      <li>Welcome, <%= link_to current_user.name, current_user %>!</li>
+      <li><%= link_to "Signout", signout_path, :method => "delete" %></li>
+    <% else %>
+      <li><%= link_to "Signin", signin_path %></li>
+      <li> | <%= link_to "Signup", signup_path %></li>
+    <% end %>
+  </ul>
+</nav>

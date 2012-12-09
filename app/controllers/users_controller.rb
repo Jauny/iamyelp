@@ -15,6 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create(params[:user])
     if @user.save
+      sign_in @user
       flash[:notice] = "Successfully signed up!"
       redirect_to @user
     else
