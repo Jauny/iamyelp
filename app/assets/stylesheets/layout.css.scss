@@ -25,7 +25,17 @@ h4 {
   float: right;
 }
 
+div#rating {
+  display: inline;
+  float: right;
+  font-size: .8em;
+}
+
 ul {
   display: inline;
   list-style: none;
+}
+
+table#rating {
+  clear: both;
 }

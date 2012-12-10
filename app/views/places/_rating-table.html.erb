@@ -1,0 +1,15 @@
+<table id="rating">
+  <thead>
+    <tr>
+      <th>Place Rating</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Average Rating</td>
+    <td><%= @place.average_rating  %></td>
+  </tr>
+  <tr>
+    <td>Your Rating</td>
+    <td><%= current_user_rating %></td>
+  </tr>
+</table>

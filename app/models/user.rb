@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   has_secure_password
 
   has_many :places
+  has_many :ratings
+  has_many :rated_places, :through => :ratings, :source => :places
 
   before_save :create_remember_token
 

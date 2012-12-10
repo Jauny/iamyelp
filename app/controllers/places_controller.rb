@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
   before_filter :require_login, :except => [:index, :show]
 
   def index
-    @places = Place.all
+    @places =  Place.all.sort {|a,b| b.average_rating <=> a.average_rating}
   end
 
   def show

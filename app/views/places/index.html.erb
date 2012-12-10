@@ -3,7 +3,9 @@
 <ul>
   <% @places.each do |place| %>
     <li><h4><%= place.address %></h4></li>
-    <li><h2><%= link_to place.name, place %></h2></li>
+
+    <li><h2><%= link_to place.name, place %> - <%= place.average_rating %></h2></li>
+
     <li><h3><%= place.description %></h3></li>
   <% end %>
 </ul>
