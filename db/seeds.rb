@@ -3,10 +3,12 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#   cities = City.create([{ name: \'Chicago\' }, { name: \'Copenhagen\' }])
+#   Mayor.create(name: \'Emanuel\', city: cities.first)
 
 puts "creating places..."
-Place.create(:name => "Devbootcamp", :address => "717 california", :description => "The best office ever")
-Place.create(:name => "Starbucks", :address => "anywhere closeby", :description => "Nice coffee")
-Place.create(:name => "Exec", :address => "Somewhere in SF not sur", :description => "Cool team, fast paced")
+Place.create(:name => "Devbootcamp", :address => "717 california", :description => "Crunk posuere auctizzle cool. Phasellus for sure elit ut owned nizzle that's the shizzle. Maecenas a fo shizzle. Vestibulum izzle fo shizzle my nizzle sed maurizzle elementum mammasay mammasa mamma oo sa. Nunc ass crazy sit break yo neck, yall for sure sheezy porta. The bizzle crunk tortor, the bizzle izzle, hendrerit quizzle, adipiscing we gonna chung, dui. Izzle velit leo, black owned, pharetra nizzle, uhuh ... yih! ma nizzle, turpizzle. Vivamizzle mammasay mammasa mamma oo sa. Crizzle bling bling. Da bomb vitae pot ass libero commodo adipiscing. Check it out ac eu we gonna chung ullamcorpizzle shit. Phasellizzle shizznit mah nizzle nizzle i saw beyonces tizzles and my pizzle went crizzle. Sizzle lorem fo, sollicitudin sizzle, mattizzle own yo', commodo hizzle, nizzle. Pot faucibizzle yo ligula.")
+
+Place.create(:name => "Starbucks", :address => "anywhere closeby", :description => "My money\'s in that office, right? If she start giving me some bullshit about it ain\'t there, and we got to go someplace else and get it, I\'m gonna shoot you in the head then and there. Then I\'m gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I\'m talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?")
+
+Place.create(:name => "Exec", :address => "Somewhere in SF not sur", :description => "Lorizzle crackalackin tellivizzle bow wow wow amet, consectetuer we gonna chung elit. Shizzle my nizzle crocodizzle daahng dawg velizzle, crackalackin you son of a bizzle, things quis, gravida yo, pizzle. Pellentesque ma nizzle tortor. Sizzle erizzle. sizzle fo dizzle sheezy tempus sizzle. Maurizzle pellentesque nibh shizzle my nizzle crocodizzle turpis. That\'s the shizzle izzle fo. Pellentesque rhoncizzle nisi. In hizzle i saw beyonces tizzles and my pizzle went crizzle crackalackin dictumst. Shizznit dapibus. Go to hizzle black urna, pretizzle go to hizzle, mattizzle my shizz, eleifend vitae, dang. Get down get down suscipit. Integizzle bling bling velizzle sed purizzle.")
