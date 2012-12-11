@@ -43,3 +43,12 @@ li#address {
 table#rating {
   clear: both;
 }
+
+#comments {
+  border-top: 1px dotted black;
+  ul {
+    li {
+      margin-top: 10px;
+    }
+  }
+}

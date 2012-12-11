@@ -15,3 +15,5 @@
     <%= button_to "Delete", place_path(@place), :method => "delete" %>
   <% end %>
 <% end %>
+
+<%= render :partial => "comments/comments.html.erb", :locals => { :place => @place } %>

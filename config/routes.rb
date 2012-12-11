@@ -1,7 +1,9 @@
 Iamyelp::Application.routes.draw do
   root :to => "places#index"
 
-  resources :places
+  resources :places do
+    resources :comments
+  end
   resources :users
   resources :ratings
   

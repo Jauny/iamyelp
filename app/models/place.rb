@@ -2,6 +2,7 @@ class Place < ActiveRecord::Base
   attr_accessible :name, :description, :address
 
   belongs_to :user
+  has_many :comments
   has_many :ratings
   has_many :raters, :through => :ratings, :source => :users
 

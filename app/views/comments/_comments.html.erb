@@ -1,0 +1,15 @@
+<div id="comments">
+  <% if signed_in? %>
+    <%= form_for [@place, @comment] do |f| %>
+    <%= f.text_field :content %>
+    <%= f.submit %>
+    <% end %>
+  <% end %>
+
+  <ul>
+  <% @place.comments.each do |comment| %>
+    <li><%= comment.user.name %><br>
+    <%= comment.content %></li>
+  <% end %>
+  </ul>
+</div>
